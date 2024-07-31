@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo (2).png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I am <span>Isha</span><br>Kashyap</h1>
+    </div>
+</div>
+    </div>
+
+<!-----about----->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/0001.jpg" alt="my photo">
+                </div>
+                    <div class="about-col-2">
+                       <h1 class="sub-title">About Me</h1>
+                       <p> Detail oriented and motivated problem solver proficient in Data Structures and Algorithms in Java with ability to
+                        multitask in a fast paced environment. Proficient in frontend web development technologies (HTML, CSS, 
+                        JavaScript, React),with a passion for leveraging the latest technologies to build responsive, intuitive websites and
+                        web applications. Eager to apply technical expertise and collaborate with teams 
+                        to drive innovation and deliver impactful solutions</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May 2024-Present</span><br>Summer Intern at Celebal Technologies</li>
+                                <li><span>March 2024-April 2024</span><br>Operations Intern at Quik Hire</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>Bachelors in Computer and Communication Engineering from Manipal University Jaipur</li>
+                                <li><span>2020</span><br>Intermediate from Carmel School</li>
+                                <li><span>2018</span><br>Matriculation from Carmel School</li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script>
+</body>
+</html>
